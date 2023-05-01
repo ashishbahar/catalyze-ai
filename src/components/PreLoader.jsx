@@ -3,6 +3,7 @@ import page_logo from "../assets/images/svg/pagelogo.svg";
 const Preloader = () => {
   useEffect(() => {
     setTimeout(() => {
+      window.scrollTo(0, 0);
       document.body.classList.remove("over_hidden");
       document.querySelector(".pre_loader").classList.add("d-none");
     }, 4000);
